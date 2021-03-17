@@ -6,3 +6,4 @@ public class SetterInjectedGreetingService implements GreetingService{
     }
 }
 
+}
