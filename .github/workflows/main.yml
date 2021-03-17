@@ -16,4 +16,5 @@ jobs:
       - uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--skip-sorting-imports --replace"
+          commitMessage: " FORMATTED WITH GITHUB ACTION - GOOGLE FORMATTER"
           
