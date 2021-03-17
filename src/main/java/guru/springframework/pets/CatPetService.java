@@ -4,7 +4,7 @@ package guru.springframework.pets;
 //@Service("cat")
 public class CatPetService implements PetService {
   @Override
-  public String getPetType() {
+  		public String getPetType() {
     return "Cats Are the Best!";
   }
 }
