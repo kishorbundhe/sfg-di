@@ -1,16 +1,17 @@
 package guru.springframework.sfgdi.services;
 
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
+import guru.springframework.sfgdi.repository.EnglishGreetingRepository;
 
-/**
- * Created by jt on 12/27/19.
- */
-@Profile("EN")
-@Service("i18nService")
 public class I18nEnglishGreetingService implements GreetingService {
-    @Override
-    public String sayGreeting() {
-        return "Hello World - EN";
-    }
+
+  private final EnglishGreetingRepository englishGreetingRepository;
+
+  public I18nEnglishGreetingService(EnglishGreetingRepository englishGreetingRepository) {
+    this.englishGreetingRepository = englishGreetingRepository;
+  }
+
+  @Override
+  public String sayGreeting() {
+    return englishGreetingRepository.sayGreeting();
+  }
 }
