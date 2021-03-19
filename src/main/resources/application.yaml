@@ -1,0 +1,7 @@
+spring:
+    profiles:
+          active: dog,EN,dev
+kishor:
+     username: Kishor
+     password: Kishor@XYZ
+     jdbcurl: http//localhost:1433

@@ -15,4 +15,3 @@ public class I18nEnglishGreetingService implements GreetingService {
     return englishGreetingRepository.sayGreeting();
   }
 }
-}
