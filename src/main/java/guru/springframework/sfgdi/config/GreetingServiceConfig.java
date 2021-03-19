@@ -2,6 +2,7 @@ package guru.springframework.sfgdi.config;
 
 import guru.springframework.sfgdi.datasource.FakeDataSource;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.*;
 import guru.springframework.pets.PetService;
 import guru.springframework.pets.PetServiceFactory;
@@ -14,6 +15,7 @@ import guru.springframework.sfgdi.services.PrimaryGreetingService;
 import guru.springframework.sfgdi.services.PropertyInjectedGreetingService;
 import guru.springframework.sfgdi.services.SetterInjectedGreetingService;
 
+@EnableConfigurationProperties(SfgConstructorBindingCfg.class)
 @Configuration
 public class GreetingServiceConfig {
     @Bean
