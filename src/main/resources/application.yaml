@@ -1,7 +1,19 @@
 spring:
     profiles:
-          active: dog,EN,dev
+          active:
+                - EN 
+                - prod
+                - cat
 kishor:
      username: Kishor
      password: Kishor@XYZ
      jdbcurl: http//localhost:1433
+     
+---
+spring:
+    profiles: prod
+    
+kishor:
+     username: KishorPROD
+     password: Kishor@PRDO
+     jdbcurl: http//PROD:1433
